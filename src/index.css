@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Noto Sans Thai', sans-serif;
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
