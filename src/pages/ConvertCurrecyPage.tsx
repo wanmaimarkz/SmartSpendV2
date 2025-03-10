@@ -29,7 +29,7 @@ const CurrencyConverter = () => {
             {convertedAmount !== null ? (
                 <div className="p-1">
                     <p className="text-base">
-                        แลกเปลี่ยนจากสกุลเงิน <b className="text-red-500">{fromCurrency}</b>  ไปเป็นสกุลเงิน <b className="text-green-500">{toCurrency}</b> ได้จำนวนเงิน: 
+                        แลกเปลี่ยนจาก <b className="text-red-500">{fromCurrency}</b>  ไปเป็น <b className="text-green-500">{toCurrency}</b> ได้จำนวนเงิน: 
                     </p>
                     <div className="flex justify-center px-8 py-10 font-bold text-3xl">
                     {convertedAmount} {toCurrency}
