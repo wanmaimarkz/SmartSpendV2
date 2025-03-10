@@ -59,21 +59,17 @@ export default function Navbar({ onLogout }: { onLogout: () => void }) {
                             <DropdownMenuTrigger asChild>
                                 <button className="flex items-center space-x-2 focus:outline-none text-white ">
                                     <User className="w-7 h-7 rounded-full stroke-orange-50 border-2 mb-1" />
-                                    {/* <span className="font-semibold" >Account</span> */}
-                                    {/* <ChevronDown className="w-5 h-5 hover:bg-blue-700 rounded-md" /> */}
                                 </button>
                             </DropdownMenuTrigger>
                             <DropdownMenuContent align="end" className="w-48 bg-white gap-2">
-                                {/* <DropdownMenuItem asChild className="hover:bg-gray-200 duration-500">
-                                    <Link to="/profile">Profile</Link>
-                                </DropdownMenuItem>
-                                <DropdownMenuItem asChild className="hover:bg-gray-200 duration-300">
-                                    <Link to="/settings">Settings</Link>
-                                </DropdownMenuItem>
-                                <hr /> */}
                                 <DropdownMenuItem onClick={onLogout} className="hover:bg-gray-200 duration-300">
                                     <LogOut className="w-4 h-4 mr-2" />
-                                    <span>Logout</span>
+                                    <Link
+                                        to="/login"
+                                        onClick={onLogout}
+                                    >
+                                        ออกจากระบบ
+                                    </Link>
                                 </DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu>
