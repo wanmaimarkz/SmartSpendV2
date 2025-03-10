@@ -61,6 +61,7 @@ export default function TransactionDetailPage() {
             });
             setTransaction((prev) => prev ? { ...prev, amount: Number(amount) } : null);
             alert("อัปเดตข้อมูลเรียบร้อยแล้ว!");
+            navigate("/transactions");
         } catch (error) {
             console.error("Error updating document: ", error);
             alert("เกิดข้อผิดพลาดในการบันทึก");
