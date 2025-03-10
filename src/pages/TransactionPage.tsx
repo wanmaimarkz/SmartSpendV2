@@ -96,8 +96,8 @@ export default function TransactionPage() {
               <Table className="rounded-xl md:w-full">
                 <TableHeader className="sticky top-0 shadow-md bg-[#2C7A7B] rounded-xl text-white">
                   <TableRow>
-                    <TableHead>ประเภท</TableHead>
-                    <TableHead>หมวดหมู่</TableHead>
+                    <TableHead className="min-w-16">ประเภท</TableHead>
+                    <TableHead className="min-w-20">หมวดหมู่</TableHead>
                     <TableHead>จำนวนเงิน</TableHead>
                     <TableHead>วันที่</TableHead>
                     <TableHead>เวลา</TableHead>
