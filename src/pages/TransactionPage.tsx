@@ -88,7 +88,7 @@ export default function TransactionPage() {
               {isLoading ? "กำลังบันทึก..." : "เพิ่มรายการ"}
             </Button>
           </div>
-          <div className="flex flex-col w-full h-3/6 md:h-1/2 max-w-xl md:max-h-max mt-6 shadow-xl p-2 rounded-lg border bg-white">
+          <div className="flex flex-col w-full h-4/6 md:h-1/2 max-w-xl md:max-h-max mt-6 shadow-xl p-2 rounded-lg border bg-white">
             <h2 className="flex items-center text-xl font-bold mb-2 gap-2 p-2"><List />รายการล่าสุด</h2>
             {transactions.length === 0 ? (
               <p className="text-gray-500">{isLoading ? "loading..." : "ไม่มีรายการ"}</p>
