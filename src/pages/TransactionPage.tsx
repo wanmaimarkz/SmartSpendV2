@@ -94,9 +94,9 @@ export default function TransactionPage() {
               <p className="text-gray-500">{isLoading ? "loading..." : "ไม่มีรายการ"}</p>
             ) : (
               <Table className="rounded-xl md:w-full">
-                <TableHeader className="sticky top-0 shadow-md bg-green-400 rounded-xl">
+                <TableHeader className="sticky top-0 shadow-md bg-[#2C7A7B] rounded-xl text-white">
                   <TableRow>
-                    <TableHead className="w-[100px]">ประเภท</TableHead>
+                    <TableHead>ประเภท</TableHead>
                     <TableHead>หมวดหมู่</TableHead>
                     <TableHead>จำนวนเงิน</TableHead>
                     <TableHead>วันที่</TableHead>
