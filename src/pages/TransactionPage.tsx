@@ -84,7 +84,7 @@ export default function TransactionPage() {
             </Select>
             <Input type="text" placeholder="หมวดหมู่ (เช่น อาหาร ค่าเดินทาง)" value={category} onChange={(e) => setCategory(e.target.value)} className="mb-2" />
             <Input type="number" min={0} placeholder="จำนวนเงิน" value={amount} onChange={(e) => setAmount(e.target.value)} className="mb-2" />
-            <Button onClick={handleAddTransaction} className="w-full bg-green-500 hover:bg-green-700 text-white" disabled={isLoading}>
+            <Button onClick={handleAddTransaction} className="w-full bg-[#2C7A7B] text-white hover:bg-green-700 duration-300" disabled={isLoading}>
               {isLoading ? "กำลังบันทึก..." : "เพิ่มรายการ"}
             </Button>
           </div>
