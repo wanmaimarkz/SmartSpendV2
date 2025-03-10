@@ -24,7 +24,7 @@ const CurrencyConverter = () => {
     }, []);
 
     return (
-        <div className="p-4 max-w-md mx-auto bg-[#E6FFFA]  shadow-md rounded-lg mt-5 border">
+        <div className="p-4 max-w-md mx-auto bg-white shadow-md rounded-lg mt-5 border">
             <h2 className="text-4xl font-bold mb-4 flex justify-center">การแลกเปลี่ยนสกุลเงิน</h2>
             {convertedAmount !== null ? (
                 <div className="p-1">
