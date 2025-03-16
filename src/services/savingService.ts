@@ -1,7 +1,7 @@
 import { db } from "@/firebaseConfig";
 import { doc, setDoc, getDoc, updateDoc, deleteDoc } from "firebase/firestore";
 
-// ✅ ตั้งเป้าหมายการออมเงิน
+
 export const setSavingGoal = async (userId: string, title:string, goalAmount: number,) => {
   try {
     await setDoc(doc(db, "savingGoals", userId), { 
@@ -32,7 +32,7 @@ export const addSavingAmount = async (userId: string, addAmount: number) => {
   }
 };
 
-// ✅ ดึงเป้าหมายการออม
+
 export const getSavingGoal = async (userId: string) => {
   try {
     const docRef = doc(db, "savingGoals", userId);
