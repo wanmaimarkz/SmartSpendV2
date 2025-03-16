@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getCurrencyList } from "@/services/currencyList"; // นำเข้าฟังก์ชัน
+import { getCurrencyList } from "@/services/currencyList";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select"; // ใช้ Select จาก ShadCN
 
 const CurrencyDropdown = ({ selectedCurrency, onChange }: { selectedCurrency: string; onChange: (value: string) => void }) => {
