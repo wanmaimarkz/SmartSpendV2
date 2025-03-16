@@ -2,7 +2,6 @@ import { db } from "@/firebaseConfig";
 import { collection, addDoc, deleteDoc, doc, getDocs, query, where, serverTimestamp, orderBy  } from "firebase/firestore";
 
 
-// เพิ่มรายรับ-รายจ่าย
 export const addTransaction = async (userId: string, type: "income" | "expense", amount: number, category: string) => {
   try {
     await addDoc(collection(db, "transactions"), {
@@ -18,7 +17,7 @@ export const addTransaction = async (userId: string, type: "income" | "expense",
   }
 };
 
-// ลบรายการ
+
 export const deleteTransaction = async (transactionId: string) => {
   try {
     await deleteDoc(doc(db, "transactions", transactionId));
