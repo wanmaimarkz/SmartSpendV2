@@ -4,7 +4,6 @@ import { auth, googleProvider } from "@/firebaseConfig";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  // sendPasswordResetEmail,
   signInWithPopup
 } from "firebase/auth";
 import { Button } from "@/components/ui/button";
