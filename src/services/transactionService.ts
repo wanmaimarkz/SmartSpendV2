@@ -27,7 +27,6 @@ export const deleteTransaction = async (transactionId: string) => {
 };
 
 
-// ดึงธุรกรรมจาก Firestore
 export const getTransactions = async (userId: string) => {
   const q = query(collection(db, "transactions"), where("userId", "==", userId), orderBy("date", "desc"));
   const snapshot = await getDocs(q);
