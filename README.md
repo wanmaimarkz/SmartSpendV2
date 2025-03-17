@@ -18,7 +18,7 @@ SmartSpend เป็นเว็บแอปพลิเคชันสำหร
 - **Frontend**: React + Vite + TypeScript
 - **UI Framework**: Tailwind CSS, shadcn/ui
 - **State Management**: React Hooks
-- **Authentication**: Firebase (หรือตามที่ใช้)
+- **Authentication**: Firebase
 - **API**: ใช้บริการ API ภายนอก คือ ExchangeRate-API
 
 ## โครงสร้างโฟลเดอร์เบื้องต้น
